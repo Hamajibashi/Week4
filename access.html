@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>台北中山旗艦店 | 門市據點</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -23,7 +23,51 @@
   </div>
   </div>
 
-  <%- contents %>
+  <div class="access container">
+    <h2 class="text-dark mb-4">門市據點</h2>
+    <div class="selector mb-5">
+        <label for="shop">選擇分店</label>
+        <select name="shop" id="shop">
+            <option value="台北中山旗艦店">台北中山旗艦店</option>
+            <option value="台北綠園店">台北綠園店</option>
+            <option value="台中清水旗艦店">台中清水旗艦店</option>
+            <option value="高雄中正形象店">高雄中正形象店</option>
+            <option value="高雄夢時代店">高雄夢時代店</option>
+        </select>
+    </div>
+    <div class="content d-flex flex-wrap">
+        <div class="shop-detail">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-1.png" alt="店面示意圖">
+            <h3 class="text-dark">台北中山旗艦店</h3>
+            <ul>
+                <li class="mb-1">
+                    <span class="material-symbols-outlined">
+                        call
+                    </span>
+                    電話：(02)000-1234
+                </li>
+                <li class="mb-1">
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                    營業時間：10:00-21:00
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    地址：台北市中山區南京東路25巷2-1號
+                </li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4622750431968!2d121.52591171493064!3d25.05231638396373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9665c221fab%3A0xe3c1d49711f01596!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUx6Jmf!5e0!3m2!1szh-TW!2stw!4v1660584771437!5m2!1szh-TW!2stw"
+                width="746" height="414" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
 
   <div class="footer bg-primary text-light">
     <div class="container">

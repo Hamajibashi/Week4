@@ -1,0 +1,634 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+  font-size: 16px; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit; }
+
+.container {
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 14px; } }
+
+.bg-primary {
+  background-color: #AA0601; }
+
+.bg-secondary {
+  background-color: #FBF2F2; }
+
+.text-primary {
+  color: #650300; }
+
+.text-light {
+  color: #fff; }
+
+.text-dark {
+  color: #000; }
+
+.mb-1 {
+  margin-bottom: 8px; }
+
+.mb-2 {
+  margin-bottom: 16px; }
+
+.mb-3 {
+  margin-bottom: 24px; }
+
+.mb-4 {
+  margin-bottom: 32px; }
+
+.mb-5 {
+  margin-bottom: 40px; }
+
+.p-section {
+  padding: 80px 0; }
+  @media (max-width: 767px) {
+    .p-section {
+      padding: 40px 0; } }
+
+.txt-center {
+  text-align: center; }
+
+.txt-left {
+  text-align: left; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fxdc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #650300; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px; } }
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #650300; }
+
+.header .container {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+  @media (max-width: 767px) {
+    .header .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (max-width: 767px) {
+    .header .container h1 {
+      margin-bottom: 16px; } }
+  .header .container h1 a {
+    width: 80px;
+    height: 48.57px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
+    background-size: contain;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+
+.header .menu {
+  font-size: 20px;
+  gap: 64px; }
+  @media (max-width: 767px) {
+    .header .menu {
+      gap: 0; } }
+  @media (max-width: 767px) {
+    .header .menu li {
+      width: 50%;
+      text-align: center;
+      padding: 12px 62px;
+      border: 1px solid #fff; } }
+  .header .menu a:hover {
+    font-weight: 600; }
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 32px; }
+  @media (max-width: 767px) {
+    .footer {
+      font-size: 16px;
+      padding: 24px 0; } }
+  .footer a:hover {
+    font-weight: 600; }
+  @media (max-width: 767px) {
+    .footer .links {
+      display: none; } }
+  .footer .links .menu {
+    gap: 48px; }
+  .footer .links .sns {
+    gap: 32px; }
+    .footer .links .sns img {
+      width: 48px; }
+    .footer .links .sns a:hover {
+      opacity: 0.8; }
+  .footer .contact {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #fff; }
+    @media (max-width: 767px) {
+      .footer .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-bottom: 24px;
+        margin-bottom: 16px; } }
+    .footer .contact .tel-mail {
+      font-size: 36px; }
+      .footer .contact .tel-mail span {
+        margin-right: 22px; }
+        @media (max-width: 767px) {
+          .footer .contact .tel-mail span {
+            font-size: 18px;
+            margin-right: 10px; } }
+      @media (max-width: 767px) {
+        .footer .contact .tel-mail a {
+          font-size: 16px; } }
+  .footer .sns-rwd {
+    display: none; }
+    @media (max-width: 767px) {
+      .footer .sns-rwd {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 8px; }
+        .footer .sns-rwd img {
+          width: 24px; }
+        .footer .sns-rwd a:hover {
+          opacity: 0.8; } }
+  @media (max-width: 767px) {
+    .footer .policy {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+  .footer .policy ul {
+    gap: 48px;
+    font-size: 14px; }
+    @media (max-width: 767px) {
+      .footer .policy ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        gap: 8px;
+        font-size: 16px; } }
+  @media (max-width: 767px) {
+    .footer .policy p {
+      margin-bottom: 8px; } }
+
+/* banner */
+.banner {
+  height: 787px;
+  width: 100%;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png");
+  background-size: cover;
+  background-position: center center; }
+  @media (max-width: 767px) {
+    .banner {
+      height: 396px; } }
+  .banner .container {
+    height: 100%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    @media (max-width: 767px) {
+      .banner .container {
+        height: 396px; } }
+  .banner h2 {
+    font-size: 36px; }
+    @media (max-width: 767px) {
+      .banner h2 {
+        font-size: 16px;
+        margin-bottom: 0; } }
+  .banner h3 {
+    font-size: 64px; }
+    @media (max-width: 767px) {
+      .banner h3 {
+        font-size: 24px; } }
+  .banner a {
+    padding: 6px 12px; }
+    @media (max-width: 767px) {
+      .banner a {
+        font-size: 24px; } }
+    .banner a:hover {
+      background-color: #650300; }
+
+/* 用專業的心，做專業的事  */
+.profession ul {
+  gap: 24px; }
+  .profession ul li {
+    width: 23%; }
+    @media (max-width: 767px) {
+      .profession ul li {
+        width: 100%;
+        margin-bottom: 24px; }
+        .profession ul li:nth-child(4) {
+          margin-bottom: 0; } }
+    .profession ul li img {
+      width: 83px;
+      height: 83px; }
+      @media (max-width: 767px) {
+        .profession ul li img {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 16px; } }
+
+/* 經典系列鏡框  */
+.classic ul {
+  gap: 24px; }
+  @media (max-width: 767px) {
+    .classic ul {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      gap: 0; }
+      .classic ul li {
+        margin-bottom: 24px; }
+        .classic ul li:nth-child(3) {
+          margin-bottom: 0; } }
+  .classic ul img {
+    width: 416px;
+    height: 416px; }
+  .classic ul h3 {
+    color: #AA0601;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic; }
+
+/* 聯名設計鏡框 */
+.collaboration {
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png");
+  background-size: cover;
+  background-position: center center; }
+  .collaboration ul li {
+    width: 50%; }
+    @media (max-width: 767px) {
+      .collaboration ul li {
+        width: 100%; }
+        .collaboration ul li:nth-child(1) {
+          margin-bottom: 24px; } }
+  .collaboration ul h3 {
+    padding: 8px 0;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    color: #AA0601;
+    background-color: #fff; }
+
+/* 顧客推薦 */
+.recommendation ul {
+  gap: 24px; }
+  @media (max-width: 767px) {
+    .recommendation ul {
+      gap: 16px; } }
+  .recommendation ul li {
+    width: 23%;
+    -webkit-box-shadow: 0px 2px 6px #00000029;
+            box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px; }
+    @media (max-width: 767px) {
+      .recommendation ul li {
+        width: 100%; } }
+
+.recommendation .comment {
+  padding: 16px;
+  height: 205px; }
+
+.recommendation .name {
+  font-weight: 500; }
+
+.recommendation time {
+  font-size: 14px;
+  color: #707070; }
+
+/* 聯絡我們 */
+.form .form-container {
+  max-width: 636px;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .form .form-container {
+      padding: 0 14px; } }
+  .form .form-container p {
+    font-size: 24px; }
+    @media (max-width: 767px) {
+      .form .form-container p {
+        font-size: 18px -2px; } }
+  .form .form-container label {
+    display: block; }
+  .form .form-container .input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 6px 12px;
+    height: 36px; }
+  .form .form-container textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 6px 12px;
+    height: 136px;
+    resize: none; }
+  @media (max-width: 767px) {
+    .form .form-container .check {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 24px; } }
+  .form .form-container .check #check {
+    margin-right: 4px; }
+  .form .form-container .check .check-txt {
+    display: inline; }
+  .form .form-container .btn {
+    width: 416px;
+    padding: 16px 0;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      .form .form-container .btn {
+        width: 100%; } }
+    .form .form-container .btn:hover {
+      background-color: #650300; }
+
+.access {
+  margin-top: 96px;
+  margin-bottom: 80px; }
+  @media (max-width: 767px) {
+    .access {
+      margin-top: 40px;
+      margin-bottom: 64px; } }
+  .access h2 {
+    padding-left: 16px;
+    border-left: 8px solid #9F1213; }
+    @media (max-width: 767px) {
+      .access h2 {
+        margin-bottom: 24px; } }
+  .access .selector label {
+    margin-right: 16px;
+    font-size: 24px; }
+    @media (max-width: 767px) {
+      .access .selector label {
+        font-size: 16px; } }
+  .access .selector select {
+    width: 304px;
+    height: 38px;
+    color: #495057;
+    font-size: 18px;
+    border: 1px solid #CED4DA;
+    padding: 6px 12px; }
+  @media (max-width: 767px) {
+    .access .selector {
+      margin-bottom: 24px; } }
+  @media (max-width: 767px) {
+    .access .content {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .access .content .shop-detail {
+    margin-right: 24px; }
+    @media (max-width: 767px) {
+      .access .content .shop-detail {
+        margin-right: 0;
+        margin-bottom: 24px; } }
+    .access .content .shop-detail img {
+      width: 526px;
+      height: 224px; }
+      @media (max-width: 767px) {
+        .access .content .shop-detail img {
+          width: 100%; } }
+    .access .content .shop-detail h3 {
+      font-size: 24px;
+      font-weight: 500;
+      padding: 8px 24px;
+      border: 1px solid #00000020; }
+    .access .content .shop-detail ul {
+      font-size: 20px;
+      padding: 16px 28px;
+      border: 1px solid #00000020; }
+    .access .content .shop-detail span {
+      font-size: 18px;
+      margin-right: 8px; }
+  @media (max-width: 767px) {
+    .access .content iframe {
+      width: 450px;
+      height: 208px; } }
+
+.category {
+  font-size: 32px;
+  font-weight: 500; }
+  @media (max-width: 767px) {
+    .category {
+      font-size: 16px; } }
+  .category li {
+    padding: 24px 150px;
+    border-left: 1px solid #DCDCDC; }
+    @media (max-width: 767px) {
+      .category li {
+        width: 100%;
+        padding: 16px 0; } }
+    .category li:nth-child(2) {
+      padding-bottom: 16px;
+      border-bottom: 8px solid #AA0601; }
+      @media (max-width: 767px) {
+        .category li:nth-child(2) {
+          padding-bottom: 8px; } }
+    .category li:nth-child(3) {
+      border-right: 1px solid #DCDCDC; }
+  .category a:hover {
+    font-weight: 600; }
+
+.product-header .header-1 {
+  width: 960px;
+  height: 296px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true");
+  background-size: cover;
+  background-position: center center; }
+  @media (max-width: 767px) {
+    .product-header .header-1 {
+      height: 136px;
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-3.png"); } }
+
+.product-header .header-2 {
+  width: 960px;
+  height: 296px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-4.png");
+  background-size: cover;
+  background-position: center center; }
+  @media (max-width: 767px) {
+    .product-header .header-2 {
+      height: 136px;
+      background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/product-header-sm-4.png"); } }
+
+.products h2 {
+  font-size: 42px; }
+  @media (max-width: 767px) {
+    .products h2 {
+      font-size: 24px; } }
+
+.products h3 {
+  font-size: 32px; }
+  @media (max-width: 767px) {
+    .products h3 {
+      font-size: 24px;
+      margin-bottom: 24px; } }
+
+.products .products-list {
+  font-size: 24px;
+  font-weight: 500; }
+  @media (max-width: 767px) {
+    .products .products-list {
+      gap: 0;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .products .products-list li {
+    width: 31.5%;
+    margin-bottom: 80px; }
+    @media (max-width: 767px) {
+      .products .products-list li {
+        width: 90%;
+        margin-bottom: 24px; }
+        .products .products-list li:nth-child(6) {
+          margin-bottom: 64px; } }
+    .products .products-list li h4:hover {
+      font-weight: 600; }
+    .products .products-list li p {
+      color: #AA0601; }
+      .products .products-list li p:hover {
+        font-weight: 600; }
+  .products .products-list a:hover {
+    opacity: 0.8; }
+
+.products .colorboxes .box {
+  width: 24px;
+  height: 24px;
+  background-color: #5F3E2D;
+  border-radius: 4px;
+  margin-right: 8px; }
+  .products .colorboxes .box:nth-child(2) {
+    background-color: #B75929; }
+
+.products .pagination li {
+  padding: 12px 16px;
+  font-size: 18px;
+  border: 1px solid #555555; }
+  .products .pagination li:nth-child(3) {
+    color: #fff;
+    background-color: #000; }
+  .products .pagination li:nth-child(7) {
+    background-color: #F2F2F2; }
+  .products .pagination li:hover {
+    color: #fff;
+    background-color: #000; }
+
+@media (max-width: 767px) {
+  .products .pagination {
+    margin-bottom: 24px; } }
+
+/*# sourceMappingURL=all.css.map */
