@@ -420,7 +420,7 @@ h3 {
     font-size: 24px; }
     @media (max-width: 767px) {
       .form .form-container p {
-        font-size: 18px -2px; } }
+        font-size: 16px; } }
   .form .form-container label {
     display: block; }
   .form .form-container .input {
