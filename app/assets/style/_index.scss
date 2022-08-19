@@ -190,7 +190,7 @@
             font-size: $font-l;
 
             @include mobile {
-                font-size: $font-s -2px;
+                font-size: 16px;
             }
         }
 
