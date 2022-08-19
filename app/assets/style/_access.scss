@@ -1,0 +1,90 @@
+.access {
+    margin-top: $spacer*12;
+    margin-bottom: $spacer*10;
+
+    @include mobile {
+        margin-top: $spacer*5;
+        margin-bottom: $spacer*8;
+    }
+
+    h2 {
+        padding-left: $spacer*2;
+        border-left: 8px solid #9F1213;
+
+        @include mobile {
+            margin-bottom: $spacer*3;
+        }
+    }
+
+    .selector {
+        label {
+            margin-right: $spacer*2;
+            font-size: $font-l;
+
+            @include mobile {
+                font-size: $font-l / 1.5;
+            }
+        }
+
+        select {
+            width: 304px;
+            height: 38px;
+            color: #495057;
+            font-size: $font-s;
+            border: 1px solid #CED4DA;
+            padding: 6px 12px;
+        }
+
+        @include mobile {
+            margin-bottom: $spacer*3;
+        }
+    }
+
+    .content {
+        @include mobile{
+            justify-content: center;
+        }
+        .shop-detail {
+            margin-right: $spacer*3;
+
+            @include mobile {
+                margin-right: 0;
+                margin-bottom: $spacer*3;
+            }
+
+            img {
+                width: 526px;
+                height: 224px;
+
+                @include mobile {
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                font-size: $font-l;
+                font-weight: $w-500;
+                padding: 8px 24px;
+                border: 1px solid #00000020;
+            }
+
+            ul {
+                font-size: $font-m;
+                padding: 16px 28px;
+                border: 1px solid #00000020;
+            }
+
+            span {
+                font-size: $font-s;
+                margin-right: $spacer;
+            }
+        }
+
+        iframe {
+            @include mobile {
+                width: 450px;
+                height: 208px;
+            }
+        }
+    }
+}

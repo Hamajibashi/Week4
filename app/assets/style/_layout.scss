@@ -1,0 +1,130 @@
+.header{
+    .container{
+        padding-top: $spacer*2;
+        padding-bottom: $spacer*2;
+        @include mobile{
+            flex-direction: column;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        h1{
+            @include mobile{
+                margin-bottom: $spacer*2;
+            }
+            a{
+                width: 80px;
+                height: 48.57px;
+                background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/logo-white.png");
+                background-size: contain;
+                @include hide-text;
+            }
+        }
+    }
+    .menu{
+        font-size: $font-m;
+        gap: 64px;
+        @include mobile{
+            gap: 0;
+        }
+        li{
+            @include mobile{
+                width: 50%;
+                text-align: center;
+                padding: 12px 62px;
+                border: 1px solid #fff;
+            }
+        }
+        a:hover{
+            font-weight: $w-600;
+        }
+    }
+}
+
+.footer {
+    padding-top: $spacer*6;
+    padding-bottom: $spacer*4;
+    @include mobile{
+        font-size: 16px;
+        padding: $spacer*3 0;
+    }
+    a:hover{
+        font-weight: $w-600;
+    }
+    .links{
+        @include mobile{
+            display: none;
+        }
+        .menu{
+            gap: 48px;
+        }
+        .sns{
+            gap: 32px;
+            img{
+                width: 48px;
+            }
+            a:hover{
+                opacity:0.8;
+            }
+        }
+    }
+    .contact{
+        padding-bottom: $spacer*4;
+        border-bottom: 1px solid #fff;
+        @include mobile{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: $spacer*3;
+            margin-bottom: $spacer*2;
+        }
+        .tel-mail{
+            font-size: $font-subtitle;
+            span{
+                margin-right: 22px;
+                @include mobile{
+                    font-size: $font-s;
+                    margin-right: 10px;
+                }
+            }
+            a{
+                @include mobile{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .sns-rwd{
+        display: none;
+        @include mobile{
+            display: flex;
+            gap: 8px;
+            img{
+                width: 24px;
+            }
+            a:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+    .policy{
+        @include mobile{
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        ul{
+            gap: 48px;
+            font-size: 14px;
+            @include mobile{
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 8px;
+                font-size: 16px;
+            }
+        }
+        p{
+            @include mobile{
+                margin-bottom: $spacer;
+            }
+        }
+    }
+}
