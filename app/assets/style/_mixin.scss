@@ -1,18 +1,8 @@
-@mixin pad {
-    @media(max-width:992px) {
-        @content
-    }
-}
-
-;
-
 @mixin mobile {
     @media(max-width:767px) {
         @content
     }
-}
-
-;
+};
 
 // 圖片取代文字
 @mixin hide-text {
@@ -22,7 +12,7 @@
 }
 
 //背景圖片設定
-@mixin background-img{
+@mixin background-img {
     background-size: cover;
     background-position: center center;
 }
