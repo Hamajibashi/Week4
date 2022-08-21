@@ -68,6 +68,20 @@ a {
   text-decoration: none;
   color: inherit; }
 
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #650300; }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px; } }
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #650300; }
+
 .container {
   max-width: 1320px;
   padding: 0 12px;
@@ -147,20 +161,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-h2 {
-  font-size: 48px;
-  font-weight: 600;
-  color: #650300; }
-  @media (max-width: 767px) {
-    h2 {
-      font-size: 24px;
-      margin-bottom: 24px; } }
-
-h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #650300; }
 
 .header .container {
   padding-top: 16px;
