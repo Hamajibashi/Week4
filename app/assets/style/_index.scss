@@ -88,8 +88,14 @@
         @include mobile {
             justify-content: center;
             gap: 0;
+        }
 
-            li {
+        li {
+            a:hover {
+                opacity: 0.8;
+            }
+
+            @include mobile {
                 margin-bottom: $spacer*3;
 
                 &:nth-child(3) {
@@ -98,9 +104,25 @@
             }
         }
 
-        img {
+        .classic-optical {
             width: 416px;
             height: 416px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-1.png");
+            @include background-img;
+        }
+
+        .classic-sunglasses {
+            width: 416px;
+            height: 416px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-2.png");
+            @include background-img;
+        }
+
+        .classic-functional {
+            width: 416px;
+            height: 416px;
+            background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-3.png");
+            @include background-img;
         }
 
         h3 {
@@ -120,9 +142,11 @@
     ul {
         li {
             width: 50%;
+
             @include mobile {
                 width: 100%;
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     margin-bottom: $spacer*3;
                 }
             }

@@ -52,11 +52,12 @@
                 margin-bottom: $spacer*3;
             }
 
-            img {
+            .shop-photo{
                 width: 526px;
                 height: 224px;
-
-                @include mobile {
+                background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-1.png");
+                @include background-img;
+                @include mobile{
                     width: 100%;
                 }
             }
