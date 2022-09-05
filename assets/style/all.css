@@ -341,44 +341,53 @@ h3 {
           margin-bottom: 16px; } }
 
 /* 經典系列鏡框  */
-.classic ul {
-  gap: 24px; }
-  @media (max-width: 767px) {
-    .classic ul {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      gap: 0; } }
+@media (max-width: 767px) {
+  .classic ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.classic ul li {
+  width: 32%;
+  margin-right: 24px; }
+  .classic ul li:nth-child(3) {
+    margin-right: 0; }
   .classic ul li a:hover {
     opacity: 0.8; }
   @media (max-width: 767px) {
     .classic ul li {
+      width: 90%;
+      margin-right: 0;
       margin-bottom: 24px; }
       .classic ul li:nth-child(3) {
         margin-bottom: 0; } }
-  .classic ul .classic-optical {
-    width: 416px;
-    height: 416px;
-    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-1.png");
-    background-size: cover;
-    background-position: center center; }
-  .classic ul .classic-sunglasses {
-    width: 416px;
-    height: 416px;
-    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-2.png");
-    background-size: cover;
-    background-position: center center; }
-  .classic ul .classic-functional {
-    width: 416px;
-    height: 416px;
-    background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-3.png");
-    background-size: cover;
-    background-position: center center; }
-  .classic ul h3 {
-    color: #AA0601;
-    font-size: 48px;
-    font-weight: 900;
-    font-style: italic; }
+
+.classic ul .classic-optical {
+  width: 100%;
+  height: 416px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-1.png");
+  background-size: cover;
+  background-position: center center; }
+
+.classic ul .classic-sunglasses {
+  width: 100%;
+  height: 416px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-2.png");
+  background-size: cover;
+  background-position: center center; }
+
+.classic ul .classic-functional {
+  width: 100%;
+  height: 416px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-section3-3.png");
+  background-size: cover;
+  background-position: center center; }
+
+.classic ul h3 {
+  color: #AA0601;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic; }
 
 /* 聯名設計鏡框 */
 .collaboration {
