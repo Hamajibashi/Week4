@@ -41,9 +41,10 @@
     }
 
     .content {
-        @include mobile{
+        @include mobile {
             justify-content: center;
         }
+
         .shop-detail {
             margin-right: $spacer*3;
 
@@ -52,12 +53,13 @@
                 margin-bottom: $spacer*3;
             }
 
-            .shop-photo{
+            .shop-photo {
                 width: 526px;
                 height: 224px;
                 background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/store-1.png");
                 @include background-img;
-                @include mobile{
+
+                @include mobile {
                     width: 100%;
                 }
             }
@@ -81,10 +83,14 @@
             }
         }
 
-        iframe {
+        .map {
             @include mobile {
-                width: 450px;
-                height: 208px;
+                width: 100%;
+
+                iframe {
+                    width: 100%;
+                    height: 208px;
+                }
             }
         }
     }
